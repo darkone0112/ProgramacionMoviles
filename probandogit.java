@@ -2,7 +2,7 @@
  * probandogit
  */
 public class probandogit {
-    public static void name(a) {
+    public static void name() {
         
     }
 }
