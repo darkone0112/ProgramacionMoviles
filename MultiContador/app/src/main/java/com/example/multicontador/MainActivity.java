@@ -12,8 +12,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button resetAll;
     Button resetOne,resetTwo,resetThre,resetFour;
     Button addOne,addTwo,addthre,addfour;
-    TextView textView1,textView2,textView3,textView4;
-    public int[] aux = new int [4];
+    TextView textView1,textView2,textView3,textView4,textView5;
+    public int[] aux = new int [5];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         textView2 = findViewById(R.id.textView2);
         textView3 = findViewById(R.id.textView3);
         textView4 = findViewById(R.id.textView4);
+        textView5 = findViewById(R.id.textView5);
 
         resetAll.setOnClickListener(this);
         addOne.setOnClickListener(this);
@@ -47,15 +48,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case R.id.addOne:
                 aux[0] +=1;
+                aux[4] += 1;
             break;
             case  R.id.addTwo:
                 aux[1] +=1;
+                aux[4] += 1;
                 break;
             case  R.id.addThre:
                 aux[2] +=1;
+                aux[4] += 1;
                 break;
             case  R.id.addFour:
                 aux[3] +=1;
+                aux[4] += 1;
                 break;
             case R.id.resetOne:
                 aux[0] = 0;
@@ -82,5 +87,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         textView2.setText(String.valueOf(aux[1]));
         textView3.setText(String.valueOf(aux[2]));
         textView4.setText(String.valueOf(aux[3]));
+        textView5.setText(String.valueOf(aux[4]));
     }
 }
