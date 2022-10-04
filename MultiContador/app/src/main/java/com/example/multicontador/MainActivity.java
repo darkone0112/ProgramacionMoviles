@@ -63,15 +63,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 aux[4] += 1;
                 break;
             case R.id.resetOne:
+                aux[4] -= aux[0];
                 aux[0] = 0;
                 break;
             case R.id.resetTwo:
+                aux[4] -= aux[1];
                 aux[1] = 0;
                 break;
             case R.id.resetThre:
+                aux[4] -= aux[2];
                 aux[2] = 0;
                 break;
             case R.id.resetFour:
+                aux[4] -= aux[3];
                 aux[3] = 0;
                 break;
             case R.id.resetAll:
