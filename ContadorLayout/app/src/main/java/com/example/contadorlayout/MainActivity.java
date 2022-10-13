@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 contador = 0;
             break;
         }
+        if (contador <= 0){
+            contador = 0;
+        }
         number.setText(String.valueOf(contador));
     }
 }
