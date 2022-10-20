@@ -111,8 +111,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     resultado.setTextColor(0xff0000);
                 }else{resultado.setTextColor(0x000000);}
             }*/
-            resultado.setText("Has elegido " + gjugador + " la maquina juega " + gmaquina + " " + ganas);
         }
+        resultado.setText("Has elegido " + gjugador + " la maquina juega " + gmaquina + " " + ganas);
     }
     public void assign(){
         tu.setText(String.valueOf(contador[0]));
