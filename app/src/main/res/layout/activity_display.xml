@@ -9,10 +9,9 @@
 
     <TextView
         android:id="@+id/displayBox"
-        android:layout_width="276dp"
-        android:layout_height="421dp"
+        android:layout_width="264dp"
+        android:layout_height="331dp"
         android:fontFamily="sans-serif-black"
-        android:text="TextView"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,13 +19,41 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/goBackBtn"
-        android:layout_width="174dp"
-        android:layout_height="71dp"
-        android:text="Go Back"
+        android:id="@+id/confirm"
+        android:layout_width="130dp"
+        android:layout_height="56dp"
+        android:text="Confirm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.752"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/displayBox" />
+        app:layout_constraintTop_toBottomOf="@+id/displayBox"
+        app:layout_constraintVertical_bias="0.515" />
+
+    <Button
+        android:id="@+id/goBackBtn"
+        android:layout_width="130dp"
+        android:layout_height="56dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayBox"
+        app:layout_constraintVertical_bias="0.515" />
+
+    <TextView
+        android:id="@+id/confirmada"
+        android:layout_width="405dp"
+        android:layout_height="72dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayBox"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
