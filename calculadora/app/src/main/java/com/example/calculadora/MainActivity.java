@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     int n1 = 0;
     int n2 = 0;
     int t = 0;
+    public int operacion = 0;
     public int calcular = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,6 +94,52 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     if (t == 0){
                         t+= Integer.valueOf((String)display.getText().toString());
                     }
+                    operacion = 1;
+                    display.setText("");
+                    /*Block operations*/
+                    blockOperations();
+                }catch (Exception e){
+                    System.out.println(e);
+                    System.out.println(n1);
+                    System.out.println(n2);
+                }
+                break;
+            case R.id.btnmin:
+                try {
+                    if (t == 0){
+                        t+= Integer.valueOf((String)display.getText().toString());
+                    }
+                    operacion = 2;
+                    display.setText("");
+                    /*Block operations*/
+                    blockOperations();
+                }catch (Exception e){
+                    System.out.println(e);
+                    System.out.println(n1);
+                    System.out.println(n2);
+                }
+                break;
+            case R.id.btnmult:
+                try {
+                    if (t == 0){
+                        t+= Integer.valueOf((String)display.getText().toString());
+                    }
+                    operacion = 3;
+                    display.setText("");
+                    /*Block operations*/
+                    blockOperations();
+                }catch (Exception e){
+                    System.out.println(e);
+                    System.out.println(n1);
+                    System.out.println(n2);
+                }
+                break;
+            case R.id.btndiv:
+                try {
+                    if (t == 0){
+                        t+= Integer.valueOf((String)display.getText().toString());
+                    }
+                    operacion = 4;
                     display.setText("");
                     /*Block operations*/
                     blockOperations();
@@ -104,7 +151,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnequ:
                 try {
-                    t+= Integer.valueOf((String)display.getText().toString());
+                    switch (operacion){
+                        case 1:
+                            t+= Integer.valueOf((String)display.getText().toString());
+                        break;
+                        case 2:
+                            t-= Integer.valueOf((String)display.getText().toString());
+                        break;
+                        case 3:
+                            t*= Integer.valueOf((String)display.getText().toString());
+                        break;
+                        case 4:
+                            t/= Integer.valueOf((String)display.getText().toString());
+                        break;
+
+                    }
                     display.setText(String.valueOf(t));
                     /*Activate operations*/
                     enableOperations();
