@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="401dp"
+        android:layout_height="712dp"
+        android:gravity="center_horizontal"
+        android:text="Contact Name" />
+</RelativeLayout>
+
+
+
